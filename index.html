@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prakshit+Fam.com</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px 15px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .container {
+      display: flex;
+      padding: 20px;
+    }
+    .sidebar {
+      width: 25%;
+      background-color: #fff;
+      padding: 15px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .content {
+      width: 75%;
+      padding: 15px;
+    }
+    article {
+      background-color: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    #dynamic-message {
+      color: darkblue;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body onload="welcomeUser()">
+
+  <header>
+    <h1>Prakshit+Fam.com</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Notes</a>
+      <a href="#">Assignments</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#">Chapter 1</a></li>
+        <li><a href="#">Chapter 2</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">Downloads</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <article>
+        <h2>Welcome to Prakshit+Fam.com</h2>
+        <p>This site contains notes, assignments, and useful materials for students and family members.</p>
+        <button onclick="updateMessage()">Click me for a surprise!</button>
+        <p id="dynamic-message"></p>
+      </article>
+
+      <article>
+        <h2>Recent Update</h2>
+        <p>Chapter 3 notes have been uploaded. Check the downloads section.</p>
+      </article>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Prakshit+Fam.com. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function welcomeUser() {
+      alert("Welcome to Prakshit+Fam.com!");
+    }
+
+    function updateMessage() {
+      document.getElementById("dynamic-message").innerText = "You're awesome! Thanks for visiting 🎉";
+    }
+  </script>
+
+</body>
+</html>
